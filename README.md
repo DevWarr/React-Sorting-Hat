@@ -10,8 +10,11 @@ Welcome to Hogwarts, the School of Whitchcraft and Wizardy. One of the tools tha
 
 ### Project description and requirements
 
-- As a student stepping into the great hall at Hogwarts should be greeted with a message and I should be able to click a button that will initiate the sorting process.
+- As a student stepping into the great hall at Hogwarts, I should be greeted with a message, and I should be able to click a button that will initiate the sorting process.
 - I should then be asked a sequence of 6 questions that will determine to which of the 4 Hogwarts Houses I should belong.
+  - [ ] 6 Questions stored as json string in questions.js
+  - [ ] Quiz.js holds json in state, switches state when form is complete
+  - [ ] Question.js has form to display question
 - When sorted, I should receive a message about which house I now belong in, that will include a history of the house and some unique facts about what type of people belong in the house.
 
   - The message page should be decorated to follow the house colors and crest.
