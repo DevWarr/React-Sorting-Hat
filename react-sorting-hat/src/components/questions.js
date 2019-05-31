@@ -1,7 +1,7 @@
 const questions = {
     "1": {
         "title": "",
-        "A": ["Gryffindor", ""],
+        "A": ["Gryffindor", "object here"],
         "B": ["Hufflepuff", ""],
         "C": ["Ravenclaw", ""],
         "D": ["Slytherin", ""]

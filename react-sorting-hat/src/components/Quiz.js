@@ -8,7 +8,7 @@ class Quiz extends React.Component {
     constructor() {
         super();
         this.state = {
-            visible: "0",
+            visible: "3",
             questions: JSON.parse(questionsON),
             // Questions: {1: {A,B,C,D}, 2: {A,B,C,D} . . .}
             Gryffindor: 0,
@@ -20,8 +20,7 @@ class Quiz extends React.Component {
 
     next = e => {
         e.preventDefault();
-        console.log(JSON.parse(questionsON)[`${Number(this.state.visible) + 3}`]);
-        
+        console.log(this.state.questions[1]);
     }
 
 
@@ -31,7 +30,7 @@ class Quiz extends React.Component {
                 <h1>A Short Hogwarts Sorting Quiz!</h1>
                 <Question 
                     display={this.state.visible}
-                    question={this.state.questions[`${this.state.visible}`] ? this.state.questions[`${this.state.visible}`] : 0}
+                    question={this.state.questions[this.state.visible] ? this.state.questions[this.state.visible] : 0}
                     next={this.next}
                 />
             </div>
